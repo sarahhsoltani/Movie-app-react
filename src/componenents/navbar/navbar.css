@@ -4,6 +4,10 @@
 .navbar-light .navbar-nav .nav-link {
     color: white;
     text-transform: uppercase;
+    
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: red;
 }
 .logo{
     width: 141px;

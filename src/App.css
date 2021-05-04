@@ -94,3 +94,57 @@
 .side-content p{
   color: gray;
 }
+.side-content h4{
+  width: 100%;
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+}
+.sub-title{
+  color:  #da0e2b;;
+  font-size: 14px;
+  letter-spacing: .1em;
+
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.explore{
+  font-size: 34px;
+  color: #333;
+  line-height: 1.4em;
+
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
+.para-service{
+  color: gray;
+    font-size: 14px;
+    line-height: 30px;
+}
+.list-movies{
+  background: rgb(17, 17, 17);
+  
+}
+
+.list-movies h5{
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+.list-movies h2{
+  width: 100%;
+  color: #fff;
+  text-align: center;
+    display: block;
+    margin: 0;
+    font-size: 46px;
+    font-weight: 600;
+}

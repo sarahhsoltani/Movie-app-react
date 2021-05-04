@@ -13,7 +13,7 @@ const Navbarr = () => {
   <Navbar.Collapse id="basic-navbar-nav">
   <Form inline>
       <FormControl className="input-search" type="text" placeholder="Type movie or tv show name to find it"  />
-     <button className="btnn search btn-red"> <i class="fas fa-search"></i></button>
+     <button className="btnn search btn-red"> <i className="fas fa-search"></i></button>
     </Form>
     <Nav  >
     <Nav.Link  className="linkk pr-3 pl-2 ml-3" href="#linkp">Home</Nav.Link>
@@ -22,7 +22,7 @@ const Navbarr = () => {
       <Nav.Link  className="linkk" href="#linkp">Contact</Nav.Link>
      
      <Nav.Link  className="linkk notifcation mt-1" href="#link"><i class="far fa-bell"></i><sup>2</sup></Nav.Link>
-     <Nav.Link className="linkk " href="#link"> Account <i class="far fa-user ml-2"></i></Nav.Link>
+     <Nav.Link className="linkk " href="#link"> Account <i className="far fa-user ml-2"></i></Nav.Link>
   
     </Nav>
    
