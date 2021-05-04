@@ -1,3 +1,8 @@
+.App{
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
 .header{
   background-image: url('./images/slide03.jpg');
   background-position: center;
@@ -87,7 +92,7 @@
 .side-content h2{
   width: 100%;
   display: block;
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 600;
   margin-bottom: 40px;
 }
@@ -98,14 +103,13 @@
   width: 100%;
   display: block;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
 }
 .sub-title{
   color:  #da0e2b;;
-  font-size: 14px;
+  font-size: 30px;
   letter-spacing: .1em;
-
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 22px;
@@ -147,4 +151,83 @@
     margin: 0;
     font-size: 46px;
     font-weight: 600;
+}
+.testimential h2{
+  width: 100%;
+  display: block;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding-right: 10%;
+  
+}
+.testimential h5 p{
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 20px;
+  padding-right: 10%;
+}
+.addon{
+  background: red;
+  color: white;
+  border-radius: 5px;
+}
+.date{
+ 
+    padding: 0;
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 100;
+   
+    color: #fff;
+}
+.card-title{
+  font-family: Roboto;
+    font-size: 28px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-weight: 300;
+}
+.rating{
+  color: #e90101;
+}
+.playing{
+ 
+  display: block;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+.news{
+  position: relative;
+  width: 5%;
+  
+}
+.new::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 19%;
+  border-radius: 12px;
+  background-color: red;
+  width: 78%;
+  left: 0;
+  animation: pulse 1000ms infinite;}
+
+@keyframes pulse{
+  0%{
+    transform: scale(.95);
+    opacity: 0.75;
+  }
+  100%{
+    transform: scale(1.65);
+    opacity: 0.3;
+  }
 }

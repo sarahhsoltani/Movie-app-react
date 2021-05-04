@@ -100,17 +100,92 @@ eius quia molestias nihil temporibus nam praesentium odit repellat.</p>
     </div>
     <div className="container">
       <div className="row mt-5 ">
-      <div className="col-md-6 col-12 mt-5">
-        <h2>Unlimited movies, TV shows, and more.</h2>
+      <div className="col-md-6 col-12 mt-5  testimential">
+        <h2 >Unlimited movies, TV shows, and more.</h2>
         <h5>Watch anywhere. Cancel anytime.</h5>
-        <p>Ready to watch? Enter your email to create or restart your membership.</p>
-        <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-  <span class="input-group-text" id="basic-addon2">Get Started</span>
+        <p className="mb-4">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div className="input-group mb-3">
+  <input type="text" className="form-control " placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+  <span className="input-group-text addon" id="basic-addon2">GET STARTED <i className="fas fa-paper-plane ml-1"></i></span>
 </div>
       </div>
       <div className="col-md-6 col-12">
         <img src="./image/side-image02.png" className="image-fluid w-75 h-75  " alt="...."/>
+      </div>
+    </div>
+    {/* -----------------------Section 6 -----------------*/}
+   <div className="d-flex">
+   <div className="news">
+  
+  <p className="new">New</p>
+ </div>
+   <h3 className="text-center playing my-5">NOW PLAYING</h3>
+  
+   </div>
+    <div className="d-flex text-center">
+      <div >
+        <div className="card bg-dark text-white">
+  <img src="./image/movie-4.jpg" className="card-img" alt="..."/>
+  <div className="card-img-overlay">
+    <h5 className="card-title title-card mb-2">X-Men:Apocalypse</h5>
+    <p className="card-text rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      </p>
+   <p className="date"> <i class="far fa-clock"></i> 5 May 2017</p>
+  </div>
+</div>
+      </div>
+      <div >
+        <div className="card bg-dark text-white">
+  <img src="./image/movie-2.jpg" className="card-img" alt="..."/>
+  <div className="card-img-overlay">
+    <h5 className="card-title title-card mb-2">X-Men:Apocalypse</h5>
+    <p className="card-text rating">
+    <i className="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    </p>
+  <p className="date"><i class="far fa-clock"></i> 5 Febrary 2017</p>
+  </div>
+</div>
+      </div>
+      <div >
+        <div className="card bg-dark text-white">
+  <img src="./image/movie-5.jpg" className="card-img" alt="..."/>
+  <div className="card-img-overlay">
+    <h5 className="card-title title-card mb-2">X-Men:Apocalypse</h5>
+    <p className="card-text rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+      <i class="far fa-star"></i>
+      
+      </p>
+      <p className="date"> <i class="far fa-clock"></i> 14 May 2020</p>
+  </div>
+</div>
+      </div>
+      <div >
+        <div className="card bg-dark text-white">
+  <img src="./image/movie-3.jpg" className="card-img" alt="..."/>
+  <div className="card-img-overlay">
+    <h5 className="card-title title-card mb-2">X-Men:Apocalypse</h5>
+    <p className="card-text rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="far fa-star"></i>
+      <i class="far fa-star"></i></p>
+   <p className="date"> <i class="far fa-clock"></i> 5 Junuary 2019</p>
+  </div>
+</div>
       </div>
     </div>
     </div>
