@@ -1,0 +1,71 @@
+.image-show{
+    background-image: url('../../images/hero-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+}
+.text-itemm h1{
+    padding-top: 127px;
+    color: white;
+    font-weight: 600;
+    font-size: 5rem;
+}
+.para-show{
+
+    line-height: 2rem;
+
+}
+/* -------------Contact -----------------*/
+.items{
+    background-image: url("../../images/bg_11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 36vh;
+}
+.label{
+    font-size: 15px;
+}
+.favorite{
+    margin-top: 8rem;
+}
+.fa-heartbeat:hover{
+    color: red;
+}
+/* ------------Details ------------*/
+.details{
+    background-image: url('../../images/hero-whats-on.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.take{
+    padding-top:10rem ;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e90101;
+}
+.more{
+    font-size: 52px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 2px;
+}
+iframe{
+    height: 50vh;
+    width: 50vh;
+}
+.sociall{
+  
+    width: 48px;
+    height: 48px;
+    line-height: 44px;
+    text-align: center;
+    border: 1px solid #585858;
+    border-radius: 24px;
+    margin-right: 6px;
+    font-size: 16px;
+    
+}

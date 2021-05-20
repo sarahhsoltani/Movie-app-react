@@ -1,14 +1,15 @@
-.App{
+body{
   overflow-x: hidden;
-  overflow-y: hidden;
+  
 
 }
 .header{
-  background-image: url('./images/slide03.jpg');
+  background-image: url('./images/slide02.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
+  margin-top: 57px;
 }
 .guerra{
   font-weight: 700;

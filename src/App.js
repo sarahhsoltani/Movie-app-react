@@ -1,11 +1,54 @@
 import './App.css';
-import Home from './componenents/home';
-
+import Favorites from './components/pages/favorites'
+import Home from './components/home';
+import {BrowserRouter,Route} from 'react-router-dom'
+import Tips from './components/pages/tips';
+import Contact from './components/pages/contact';
+import {useState,useEffect} from 'react'
+import Details from './components/pages/details';
+import Admin from './components/admin';
+import axios from 'axios';
 function App() {
+  const [film, setFilm] = useState([])
+  // const getFilm = ()=>{
+    
+  //   fetch('films.json').then(
+  //         response => response.json()).then 
+  //                  (films => setFilm(films));
+  // }
+  
+  // useEffect(()=> {getFilm()
+  // },[])
+  const [favorite,setfavorite]=useState([])
+  const addFavorite=(e)=>{
+    favorite.push(e)
+    console.log(`favorite`, favorite)
+  } 
+   //Get movies
+   const getFilm=()=> {
+    axios.get("http://localhost:3007/posts").then((response) => {
+    
+      setFilm(response.data);
+      console.log(`ziedaa`, film)
+    });
+  } 
+  useEffect(()=> {getFilm()
+    console.log(`ziedaa`, film)
+
+  },[])
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <BrowserRouter>
+      <Route exact path="/" > <Home film={film} getFilm={getFilm} addFavorite={addFavorite}/></Route>
+      <Route  path="/favorites" > <Favorites favorite={favorite}/> </Route>
+      <Route  path="/tips" > <Tips/></Route>
+            {film.map((el) => (
+              <Route path={"/details" + el.id}>
+                <Details el={el}/>
+              </Route>
+            ))}
+      <Route  path="/contact" > <Contact/></Route>
+      <Route path="/admin" ><Admin/></Route>
+    </BrowserRouter>
   );
 }
 

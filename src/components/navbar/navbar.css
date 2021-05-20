@@ -1,0 +1,57 @@
+.navs{
+    background-color: black;
+}
+.navbar-light .navbar-nav a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.navbar-light .navbar-nav a:hover{
+    color: red;
+}
+.logo{
+    width: 141px;
+    height: 49px;
+}
+.fa-user{
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 18px;
+}
+.notifcation{
+    margin-left: 193px;
+
+}
+.notifcation sup{
+    color: white;
+    font-size: 12px;
+    border-radius: 16px;
+    padding: 4px;
+    background-color: #e90101;
+}
+.input-search{
+    background-color: transparent;
+    border-right: none !important;
+    border: 1px solid white;
+}
+.search{
+    color: red;
+    border: 1px solid white !important;
+    border-left: none !important;
+}
+.list{
+    color: white;
+}
+.para{
+    color: white;
+}
