@@ -47,7 +47,7 @@ function Movies ({film,input,addFavorite}) {
              <p className="card-text title-film">{el.title} </p>
              <div className="d-flex justify-content-around">
              <p className="card-text text-center ">{el.year}</p>
-            
+             <p className="type-film">{el.type}</p>
              <p><i class="fas fa-play-circle"></i></p>
              
              </div>

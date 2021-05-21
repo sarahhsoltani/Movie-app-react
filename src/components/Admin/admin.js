@@ -9,7 +9,7 @@ const Admin = () => {
   const handleShow = () => setShow(true);
   const [input,setInput]=useState(
     {
-    title:"",desc:"",year:"",rating:'',image:''
+    title:"",desc:"",year:"",rating:'',image:'',type:''
 }
 );
 //handleChage
@@ -27,7 +27,7 @@ const handleChange = e => {
    const handlesubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/posts",input)
+      .post("http://localhost:3007/posts",input)
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
       console.log(`inpuuuuuuuuut`, input)
@@ -60,9 +60,16 @@ const handleChange = e => {
   </Form.Group>
   <Form.Group controlId="formBasicPassword">
     <Form.Label>image</Form.Label>
-    <Form.Control type="file" placeholder="image"  name='image' onChange={handleChange} />
+    <Form.Control type="text" placeholder="image"  name='image' onChange={handleChange} />
   </Form.Group>
-
+  <Form.Group controlId="formBasicPassword">
+    <Form.Label>type</Form.Label>
+    <Form.Control type="text" placeholder="image"  name='type' onChange={handleChange} />
+  </Form.Group>
+  <Form.Group controlId="formBasicPassword">
+    <Form.Label>year</Form.Label>
+    <Form.Control type="text" placeholder="image"  name='year' onChange={handleChange} />
+  </Form.Group>
   <Button variant="secondary" onClick={handleClose}>
     Close
   </Button>

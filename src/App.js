@@ -6,8 +6,9 @@ import Tips from './components/pages/tips';
 import Contact from './components/pages/contact';
 import {useState,useEffect} from 'react'
 import Details from './components/pages/details';
-import Admin from './components/admin';
+import Admin from './components/Admin/admin';
 import axios from 'axios';
+import Test from './components/Admin/test';
 function App() {
   const [film, setFilm] = useState([])
   // const getFilm = ()=>{
@@ -48,6 +49,7 @@ function App() {
             ))}
       <Route  path="/contact" > <Contact/></Route>
       <Route path="/admin" ><Admin/></Route>
+      <Route path="/test" ><Test/></Route>
     </BrowserRouter>
   );
 }

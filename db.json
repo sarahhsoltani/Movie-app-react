@@ -1,119 +1,123 @@
 {
   "posts": [
-  
     {
       "title": "Black Panther",
       "year": "2009",
-      "desc":"After the events that unfolded in Captain America: Civil War, T'Challa returns home to take his place on the throne of Wakanda, a technologically highly advanced African nation but when an old enemy resurfaces, T'Challa's courage is lost. strained",
+      "desc": "After the events that unfolded in Captain America: Civil War, T'Challa returns home to take his place on the throne of Wakanda, a technologically highly advanced African nation but when an old enemy resurfaces, T'Challa's courage is lost. strained",
       "type": "Romance",
-      "image": "https://themezinho.net/digiflex/images/movies01.jpg"
-      ,"id":12,
-      "rating":3
+      "image": "https://themezinho.net/digiflex/images/movies01.jpg",
+      "id": 12,
+      "rating": 3
     },
-
-{
-    "title": "Coming Soon",
-    "year": "2017",
-    "trailer":"https://www.youtube.com/embed/JAR3WAyIJ0o",
-    "desc":"Shane (Chantavit Dhanasevi) is an indebted theater projectionist who has vowed to hack an upcoming Thai horror movie that concerns the vengeful spirit of a crazy village woman who was hanged after she was discovered kidnapping and blind children. After the disappearance of his friend who was recording the film in the cinema with his DV camera,",
+    {
+      "title": "Coming Soon",
+      "year": "2017",
+      "trailer": "https://www.youtube.com/embed/JAR3WAyIJ0o",
+      "desc": "Shane (Chantavit Dhanasevi) is an indebted theater projectionist who has vowed to hack an upcoming Thai horror movie that concerns the vengeful spirit of a crazy village woman who was hanged after she was discovered kidnapping and blind children. After the disappearance of his friend who was recording the film in the cinema with his DV camera,",
       "type": "Dramma",
-      "image": "https://themezinho.net/digiflex/images/movies02.jpg"
-      ,"id":11,
-      "rating":5
-},
-{
-    "title": "Handmaiden",
-    "year": "2019",
-    "desc":"Korea. 1930s, during Japanese colonization. A young woman (Sookee) is hired as a servant to a wealthy Japanese woman (Hideko), living as a recluse in a huge mansion under the control of a tyrannical uncle. However, Sookee has a secret. With the help of a crook posing as a Japanese count, they have other plans for Hideko."
-      ,"type": "Commedy",
-      "image": "https://themezinho.net/digiflex/images/movies03.jpg"
-     , "id":10,
-     "rating":4
-},
-{
-  "title": "Interstellar",
-  "year": "2018",
-  "desc":"In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits"
-    ,"type": "Romance",
-    "image": "https://themezinho.net/digiflex/images/movies06.jpg"
-    ,"id":9,
-    "rating":4
-},
-{
-  "title": "Vikings",
-  "year": "2015",
-  "desc":"Vikings In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
+      "image": "https://themezinho.net/digiflex/images/movies02.jpg",
+      "id": 11,
+      "rating": 5
+    },
+    {
+      "title": "Handmaiden",
+      "year": "2019",
+      "desc": "Korea. 1930s, during Japanese colonization. A young woman (Sookee) is hired as a servant to a wealthy Japanese woman (Hideko), living as a recluse in a huge mansion under the control of a tyrannical uncle. However, Sookee has a secret. With the help of a crook posing as a Japanese count, they have other plans for Hideko.",
+      "type": "Commedy",
+      "image": "https://themezinho.net/digiflex/images/movies03.jpg",
+      "id": 10,
+      "rating": 4
+    },
+    {
+      "title": "Interstellar",
+      "year": "2018",
+      "desc": "In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
       "type": "Romance",
-    "image": "https://themezinho.net/digiflex/images/movies04.jpg"
-    ,"id":8,
-    "rating":3
-},
-{
-  "title": "Monospaced",
-  "year": "2011",
-  "desc":" Monospaced In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-    "ype": "Action",
-    "image": "https://themezinho.net/digiflex/images/movies05.jpg",
-    "id":1,
-    "rating":4
-    
-},
-{
-  "title": "Secret Michael's ",
-  "year": "2011",
-  "desc":"Secret Michael's  In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-    "type": "Commedy",
-    "image": "https://themezinho.net/digiflex/images/movies07.jpg",
-    "id":2,
-    "rating":3
-},
-{
-  "title": " World Tour",
-  "year": "2011",
-  "desc":"In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-    "type": "Adventure",
-    "image": "https://themezinho.net/digiflex/images/movies08.jpg",
-    "id":3
-    ,"rating":4.5
-},
-{
-  "title": " Thrill Crazy",
-  "year": "2011",
-  "desc":"In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-    "type": "Commedy",
-    "image": "https://themezinho.net/digiflex/images/movies09.jpg"
-    ,"id":4,
-    "rating":3
-},
-{
-  "title": "Not Out",
-  "year": "2019",
-  "desc":" Not Out In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-    "type": "Horreur",
-    "image": "https://themezinho.net/digiflex/images/movies10.jpg",
-    "id":5 ,
-    "rating":5 
-},
-{
-  "title": "World of War",
-  "year": "2018",
-  "desc":" World of War In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-    "type": "Action",
-    "image": "https://themezinho.net/digiflex/images/movies11.jpg",
-    "id":6,
-    "rating":3.5
-},
-{
-  "title": "Love Everywhere",
-  "year": " 2011",
-  "desc":"Love Everywhere In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-    "type": "Romance",
-    "image": "https://themezinho.net/digiflex/images/movies12.jpg",
-    "id":7,
-    "rating":4.5
-}
-
-
+      "image": "https://themezinho.net/digiflex/images/movies06.jpg",
+      "id": 9,
+      "rating": 4
+    },
+    {
+      "title": "Vikings",
+      "year": "2015",
+      "desc": "Vikings In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
+      "type": "Romance",
+      "image": "https://themezinho.net/digiflex/images/movies04.jpg",
+      "id": 8,
+      "rating": 3
+    },
+    {
+      "title": "Monospaced",
+      "year": "2011",
+      "desc": " Monospaced In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
+      "ype": "Action",
+      "image": "https://themezinho.net/digiflex/images/movies05.jpg",
+      "id": 1,
+      "rating": 4
+    },
+    {
+      "title": "Secret Michael's ",
+      "year": "2011",
+      "desc": "Secret Michael's  In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
+      "type": "Commedy",
+      "image": "https://themezinho.net/digiflex/images/movies07.jpg",
+      "id": 2,
+      "rating": 3
+    },
+    {
+      "title": " World Tour",
+      "year": "2011",
+      "desc": "In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
+      "type": "Adventure",
+      "image": "https://themezinho.net/digiflex/images/movies08.jpg",
+      "id": 3,
+      "rating": 4.5
+    },
+    {
+      "title": " Thrill Crazy",
+      "year": "2011",
+      "desc": "In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
+      "type": "Commedy",
+      "image": "https://themezinho.net/digiflex/images/movies09.jpg",
+      "id": 4,
+      "rating": 3
+    },
+    {
+      "title": "Not Out",
+      "year": "2019",
+      "desc": " Not Out In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
+      "type": "Horreur",
+      "image": "https://themezinho.net/digiflex/images/movies10.jpg",
+      "id": 5,
+      "rating": 5
+    },
+    {
+      "title": "World of War",
+      "year": "2018",
+      "desc": " World of War In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
+      "type": "Action",
+      "image": "https://themezinho.net/digiflex/images/movies11.jpg",
+      "id": 6,
+      "rating": 3.5
+    },
+    {
+      "title": "Love Everywhere",
+      "year": " 2011",
+      "desc": "Love Everywhere In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
+      "type": "Romance",
+      "image": "https://themezinho.net/digiflex/images/movies12.jpg",
+      "id": 7,
+      "rating": 4.5
+    },
+    {
+      "title": "sara",
+      "desc": "xx",
+      "year": "021",
+      "rating": 2,
+      "image": "https://www.presse-citron.net/app/uploads/2019/12/avatarsuite.jpg",
+      "type": "tromance",
+      "id": 13
+    }
   ],
   "comments": [
     {
