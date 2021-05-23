@@ -1,22 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./admin.css";
 import "./material-dashboard.css"
-const Test = () => {
+const Doshboard = () => {
   return(
     <div class="dark-edition">
           <div class="wrapper ">
     <div className="sidebar" data-color="purple" data-background-color="black" >
     
-      <div className="logo"><a href="http://www.creative-tim.com" className="simple-text logo-normal">
-          Welcome
-        </a></div>
-      <div className="sidebar-wrapper">
+      <div className="logo">
+      <img src="./image/logo.png" alt="..." className="logo-dash mb-5"/>
+  </div>
+      <div className="sidebar-wrapper mt-5">
         <ul className="nav">
           <li className="nav-item active  ">
-            <a className="nav-link" href="./dashboard.html">
+            <Link className="nav-link" to='/admin'>
               <i className="material-icons">dashboard</i>
               <p>Dashboard</p>
-            </a>
+            </Link>
           </li>
           <li className="nav-item ">
             <a className="nav-link" href="./user.html">
@@ -25,19 +26,19 @@ const Test = () => {
             </a>
           </li>
           <li className="nav-item ">
-            <a className="nav-link" href="./tables.html">
+            <Link className="nav-link" to="/addMovies">
               <i className="material-icons">content_paste</i>
               <p>Movie List</p>
-            </a>
+            </Link>
           </li>
          
          
          
           <li className="nav-item ">
-            <a className="nav-link" href="./notifications.html">
+            <Link className="nav-link" to="/notification">
               <i className="material-icons">notifications</i>
               <p>Notifications</p>
-            </a>
+            </Link>
           </li>
          
         </ul>
@@ -113,7 +114,7 @@ const Test = () => {
                   <div className="ct-chart" id="dailySalesChart"></div>
                 </div>
                 <div className="card-body">
-                  <h4 className="card-title">Daily Sales</h4>
+                  <h4 className="card-title">Movies Store</h4>
                   <p className="card-category">
                     <span className="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
                 </div>
@@ -209,22 +210,7 @@ const Test = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div className="card card-stats">
-                <div className="card-header card-header-info card-header-icon">
-                  <div className="card-icon">
-                    <i className="fa fa-twitter"></i>
-                  </div>
-                  <p className="card-category">Followers</p>
-                  <h3 className="card-title">+245</h3>
-                </div>
-                <div className="card-footer">
-                  <div className="stats">
-                    <i className="material-icons">update</i> Just Updated
-                  </div>
-                </div>
-              </div>
-            </div>
+          
           </div>
          
         </div>
@@ -242,4 +228,4 @@ const Test = () => {
 
  }
 
-export default Test
+export default Doshboard

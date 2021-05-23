@@ -50,7 +50,7 @@
       "title": "Monospaced",
       "year": "2011",
       "desc": " Monospaced In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-      "ype": "Action",
+      "type": "Action",
       "image": "https://themezinho.net/digiflex/images/movies05.jpg",
       "id": 1,
       "rating": 4
@@ -83,40 +83,13 @@
       "rating": 3
     },
     {
-      "title": "Not Out",
-      "year": "2019",
-      "desc": " Not Out In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-      "type": "Horreur",
-      "image": "https://themezinho.net/digiflex/images/movies10.jpg",
-      "id": 5,
-      "rating": 5
-    },
-    {
-      "title": "World of War",
-      "year": "2018",
-      "desc": " World of War In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-      "type": "Action",
-      "image": "https://themezinho.net/digiflex/images/movies11.jpg",
-      "id": 6,
-      "rating": 3.5
-    },
-    {
-      "title": "Love Everywhere",
-      "year": " 2011",
-      "desc": "Love Everywhere In the near future, the Earth is less and less welcoming to humanity which is experiencing a serious food crisis. The film chronicles the adventures of a group of explorers who use a recently discovered rift in space-time to push human limits",
-      "type": "Romance",
-      "image": "https://themezinho.net/digiflex/images/movies12.jpg",
-      "id": 7,
-      "rating": 4.5
-    },
-    {
-      "title": "sara",
-      "desc": "xx",
-      "year": "021",
-      "rating": 2,
-      "image": "https://www.presse-citron.net/app/uploads/2019/12/avatarsuite.jpg",
-      "type": "tromance",
-      "id": 13
+      "title": "",
+      "desc": "",
+      "year": "",
+      "rating": "",
+      "image": "",
+      "type": "",
+      "id": 5
     }
   ],
   "comments": [

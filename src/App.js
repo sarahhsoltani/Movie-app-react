@@ -8,7 +8,8 @@ import {useState,useEffect} from 'react'
 import Details from './components/pages/details';
 import Admin from './components/Admin/admin';
 import axios from 'axios';
-import Test from './components/Admin/test';
+import AddMovies from './components/Admin/addMovies';
+import Notification from './components/Admin/notification';
 function App() {
   const [film, setFilm] = useState([])
   // const getFilm = ()=>{
@@ -48,8 +49,9 @@ function App() {
               </Route>
             ))}
       <Route  path="/contact" > <Contact/></Route>
-      <Route path="/admin" ><Admin/></Route>
-      <Route path="/test" ><Test/></Route>
+      <Route path="/admin" ><Admin /></Route>
+      <Route path='/addMovies'><AddMovies getFilm={getFilm} film={film}/></Route>
+      <Route path="/notification"> <Notification/></Route>
     </BrowserRouter>
   );
 }

@@ -1,5 +1,9 @@
 .navs{
-    background-color: black;
+    background-color: black !important;
+}
+.navbar{
+  
+        background-color: black !important
 }
 .navbar-light .navbar-nav a {
     color: white;

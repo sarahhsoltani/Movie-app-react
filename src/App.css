@@ -46,6 +46,14 @@ body{
 
   padding: 15px 44px 15px 50px !important;
 }
+.edit{
+  color: white;
+  cursor: pointer;
+}
+.remove{
+  color: #da0e2b;
+  cursor: pointer;
+}
 .plus{
   border: 1px solid white;
     border-radius: 22px;
