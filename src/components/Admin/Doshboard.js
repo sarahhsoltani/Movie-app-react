@@ -111,12 +111,20 @@ const Doshboard = () => {
             <div className="col-xl-4 col-lg-12">
               <div className="card card-chart">
                 <div className="card-header card-header-success">
-                  <div className="ct-chart" id="dailySalesChart"></div>
+                  <div className="ct-chart" id="dailySalesChart">
+                  <span class="material-icons live">
+                     live_tv
+                     </span>
+                  </div>
                 </div>
                 <div className="card-body">
                   <h4 className="card-title">Movies Store</h4>
                   <p className="card-category">
-                    <span className="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+                    <span className="text-success"><i class="fa fa-long-arrow-up">
+                   
+                      </i> 
+                      <br/> <br/>
+                      55% </span> increase in today sales.</p>
                 </div>
                 <div className="card-footer">
                   <div className="stats">
@@ -128,11 +136,15 @@ const Doshboard = () => {
             <div className="col-xl-4 col-lg-12">
               <div className="card card-chart">
                 <div className="card-header card-header-warning">
-                  <div className="ct-chart" id="websiteViewsChart"></div>
+                  <div className="ct-chart" id="websiteViewsChart">
+                  <span class="material-icons live">
+                    forward_to_inbox
+                    </span>
+                  </div>
                 </div>
                 <div className="card-body">
                   <h4 className="card-title">Email Subscriptions</h4>
-                  <p className="card-category">Last Campaign Performance</p>
+                  <p className="card-category"> <br/> <br/> Last Campaign Performance</p>
                 </div>
                 <div className="card-footer">
                   <div className="stats">
@@ -144,11 +156,15 @@ const Doshboard = () => {
             <div className="col-xl-4 col-lg-12">
               <div className="card card-chart">
                 <div className="card-header card-header-danger">
-                  <div className="ct-chart" id="completedTasksChart"></div>
+                  <div className="ct-chart" id="completedTasksChart">
+                  <span class="material-icons live">
+                    notifications_active
+                    </span>
+                  </div>
                 </div>
                 <div className="card-body">
                   <h4 className="card-title">Completed Tasks</h4>
-                  <p className="card-category">Last Campaign Performance</p>
+                  <p className="card-category"> <br/> <br/> Last Campaign Performance</p>
                 </div>
                 <div className="card-footer">
                   <div className="stats">

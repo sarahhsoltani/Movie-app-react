@@ -4,18 +4,20 @@ import {Form,Button,Modal} from  'react-bootstrap'
 import {useState,useEffect} from 'react';
 import {Link} from 'react-router-dom'
 import Rater from 'react-rater'
+import Update from './update';
 
-const AddMovies = ({film,title,}) => {
+const AddMovies = ({film,title,search,handleChange}) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    const [showw, setShoww] = useState(false);
-  const handleCloose = () => setShoww(false);
-  const handleShoww = () => setShoww(true);
+  //   const [showw, setShoww] = useState(false);
+  // const handleCloose = () => setShoww(false);
+  // const handleShoww = () => setShoww(true);
   const [input,setInput]=useState( { title:"",desc:"",year:"",rating:'',image:'',type:''});
-  const [update,setUpdate]=useState(input)
+  // const [update,setupdate]=useState( { title:el.title,desc:el.desc,year:el.year,rating:el.rating,image:el.image,type:el.type});
+
   //handleChage
-  const handleChange = e => {
+  const handleMOvie = e => {
     const { name, value } = e.target;
     //e.target.name=e.target.value
     setInput({
@@ -24,20 +26,20 @@ const AddMovies = ({film,title,}) => {
     
     });
    
-  };
-  const handleChangee = e => {
-    const { name, value } = e.target;
-    //e.target.name=e.target.value
-    setInput({
-      ...update,
-      [name]: value,
+   };
+  // const handleChangee = e => {
+  //   const { name, value } = e.target;
+  //   //e.target.name=e.target.value
+  //   setupdate({
+  //     ...update,
+  //     [name]: value,
     
-    });
-   
-  };
+  //   });
+  //   console.log(`mansourrr`,update )
+  // };
      //post data 
-     const handlesubmit = (e) => {
-      e.preventDefault();
+     const handlesubmit = () => {
+    
       axios
         .post("http://localhost:3007/posts",input)
         .then((response) => console.log(response))
@@ -66,19 +68,19 @@ const AddMovies = ({film,title,}) => {
       console.log(err)
     );
   }
+
   //Update movies
 
-const updateMovies=(id)=> {
+// const updateMovies=(id)=> {
        
-        axios.put(`http://localhost:3007/posts/${id}`, update)
-        .then(response => {
-          setUpdate( response.data.update);})
-    }
-    console.log(`updaaaaaate`, update)
-    useEffect(()=> {updateMovies()
-      console.log(`ziedaa`, film)
-  
-    },[])
+//         axios.put(`http://localhost:3007/posts/${id}`, update)
+//         .then(response => {
+//           setupdate( response.data);})
+//     }
+//     console.log(`updaaaaaate`, update)
+
+//     useEffect(()=> {updateMovies()
+//     },[]   )
   return(
 
 <div class="dark-edition">
@@ -90,7 +92,7 @@ const updateMovies=(id)=> {
 </div>
 <div className="sidebar-wrapper mt-5">
 <ul className="nav">
-<li className="nav-item active  ">
+<li className="nav-item   ">
 <Link className="nav-link" to='/admin'>
    <i className="material-icons">dashboard</i>
    <p>Dashboard</p>
@@ -102,7 +104,7 @@ const updateMovies=(id)=> {
     <p>User Profile</p>
   </a>
 </li>
-<li className="nav-item ">
+<li className="nav-item active">
   <a className="nav-link" to="/addMovies">
     <i className="material-icons">content_paste</i>
     <p>Movie List</p>
@@ -137,7 +139,7 @@ const updateMovies=(id)=> {
 <div className="collapse navbar-collapse justify-content-end">
   <form className="navbar-form">
     <div className="input-group no-border">
-      <input type="text" value="" class="form-control" placeholder="Search..."/>
+      <input type="text" className="form-control"  onChange={handleChange} placeholder="Search..."/>
       <button type="submit" className="btn btn-default btn-round btn-just-icon">
         <i className="material-icons">search</i>
         <div className="ripple-container"></div>
@@ -190,35 +192,35 @@ const updateMovies=(id)=> {
      
  <Modal show={show} onHide={handleClose}>
  <Modal.Header closeButton>
-   <Modal.Title>Modal heading</Modal.Title>
+   <Modal.Title className="title-modal">Add Film</Modal.Title>
  </Modal.Header>
  <Modal.Body>
  <Form onSubmit={handlesubmit}>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Title</Form.Label>
-    <Form.Control type="text" placeholder="title" name='title' onChange={handleChange}/>
+    <Form.Control type="text" placeholder="title" name='title' onChange={handleMOvie}/>
   
   </Form.Group>
 
    <Form.Group controlId="formBasicPassword">
     <Form.Label>description</Form.Label>
-     <Form.Control type="text" placeholder="enter description"  name='desc'  onChange={handleChange} />
+     <Form.Control type="text" placeholder="enter description"  name='desc'  onChange={handleMOvie} />
    </Form.Group>
   <Form.Group controlId="formBasicPassword">
     <Form.Label> Rating</Form.Label>
-         <Form.Control type="text" placeholder="enter rating"  name='rating' onChange={handleChange} />
+         <Form.Control type="text" placeholder="enter rating"  name='rating' onChange={handleMOvie} />
   </Form.Group>
   <Form.Group controlId="formBasicPassword">
     <Form.Label>image</Form.Label>
-    <Form.Control type="text" placeholder="enter image"  name='image' onChange={handleChange} />
+    <Form.Control type="text" placeholder="enter image"  name='image' onChange={handleMOvie} />
   </Form.Group>
    <Form.Group controlId="formBasicPassword">
     <Form.Label>type</Form.Label>
-     <Form.Control type="text" placeholder="enter image"  name='type' onChange={handleChange} />
+     <Form.Control type="text" placeholder="enter image"  name='type' onChange={handleMOvie} />
    </Form.Group>
    <Form.Group controlId="formBasicPassword">
      <Form.Label>year</Form.Label>
-     <Form.Control type="text" placeholder="enter year"  name='year' onChange={handleChange} />
+     <Form.Control type="text" placeholder="enter year"  name='year' onChange={handleMOvie} />
    </Form.Group>
   <Button variant="secondary" onClick={handleClose}>
      Close
@@ -237,8 +239,10 @@ const updateMovies=(id)=> {
  <div className='container'>
  <div className="row">
 
-{
-      film.map(el=>
+{  film.filter(el=>
+        el.title.toLowerCase().includes(search.toLowerCase())
+        ).map(el=>
+   
         <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-3">
             <div className="card" >
             <Link to={"/details" + el.id}>
@@ -258,41 +262,41 @@ const updateMovies=(id)=> {
      <div className="d-flex justify-content-around"> 
      <p><i className="fas fa-trash remove " onClick={()=>deleteMovie(el.id)}></i></p>
        
-       
-        <p> <i className="fas fa-pen-square edit "  onClick={handleShoww}></i></p> 
+       <Update el={el} />
+        {/* <p> <i className="fas fa-pen-square edit "  onClick={handleShoww}></i></p> 
 
 
       <Modal show={showw} onHide={handleCloose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Put film</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         <Form >
   <Form.Group controlId="formBasic">
     <Form.Label>Title</Form.Label>
-    <Form.Control type="text" placeholder="title" name='title'  defaultValue={el.title} onChange={handleChange}/>
+    <Form.Control type="text" placeholder=" enter title" name='title'  defaultValue={el.title} onChange={handleChangee}/>
   
   </Form.Group>
 
    <Form.Group controlId="formBasicssword">
     <Form.Label>description</Form.Label>
-     <Form.Control type="text" placeholder="enter description"   defaultValue={el.desc} name='desc'  handleChangee={handleChangee} />
+     <Form.Control type="text" placeholder="enter description"   defaultValue={el.desc} name='desc'  onChange={handleChangee} />
    </Form.Group>
   <Form.Group controlId="formBasicPword">
     <Form.Label> Rating</Form.Label>
-         <Form.Control type="text" placeholder="enter rating"  defaultValue={el.rating} name='rating' handleChangee={handleChangee} />
+         <Form.Control type="text" placeholder="enter rating"  defaultValue={el.rating} name='rating' onChange={handleChangee} />
   </Form.Group>
   <Form.Group controlId="formBasicPasrd">
     <Form.Label>image</Form.Label>
-    <Form.Control type="text" placeholder="enter image"  defaultValue={el.image}  name='image'  handleChangee={handleChangee}/>
+    <Form.Control type="text" placeholder="enter image"  defaultValue={el.image}  name='image'  onChange={handleChangee}/>
   </Form.Group>
    <Form.Group controlId="formBasicPasswordd">
     <Form.Label>type</Form.Label>
-     <Form.Control type="text" placeholder="entedr type" defaultValue={el.type}  name='type'  handleChangee={handleChangee} />
+     <Form.Control type="text" placeholder="entedr type" defaultValue={el.type}  name='type'  onChange={handleChangee} />
    </Form.Group>
    <Form.Group controlId="formBasicPassworrd">
      <Form.Label>year</Form.Label>
-     <Form.Control type="text" placeholder="enter year" defaultValue={el.year}  name='year'  handleChangee={handleChangee} />
+     <Form.Control type="text" placeholder="enter year" defaultValue={el.year}  name='year'  onChange={handleChangee} />
    </Form.Group>
 
  </Form>
@@ -301,11 +305,12 @@ const updateMovies=(id)=> {
         <Button variant="secondary" onClick={handleCloose}>
      Close
    </Button>
-   <Button type='submit' variant="primary"  onClick={()=>{updateMovies(el.id); handleCloose()}} >
+   <Button type='submit' variant="primary"  onClick={()=>updateMovies(el.id)}
+   >
      Save Changes
    </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
      </div>
       </div> 
         </div>

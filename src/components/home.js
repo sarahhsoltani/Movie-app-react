@@ -4,17 +4,11 @@ import Movies from './movies/movie'
 import Footer from './footer/footer'
 import {useState} from 'react'
 
-const Home = ({addFavorite,film,getFilm}) => {
-  const [input,setInput]=useState("")
-
-  const handlChange=(e)=>{
-    setInput(
-      e.target.value
-    )
-  }
+const Home = ({addFavorite,film,getFilm,search,handleChange}) => {
+ 
   return(
     <div>
-        <Navbarr input={input} handlChange={handlChange}/>
+        <Navbarr search={search} handlChange={handleChange}/>
       
      <div className="header">
        <div className="container ">
@@ -101,7 +95,7 @@ eius quia molestias nihil temporibus nam praesentium odit repellat.</p>
     <h2>Movies For You</h2></div>
 
    <div className="row px-3">
-    <Movies input={input} film={film} getFilm={getFilm}  addFavorite={addFavorite} />
+    <Movies search={search} film={film} getFilm={getFilm}  addFavorite={addFavorite} />
   
    </div>
    <button className="text-center btnn btn-redd mb-4">BROWSE ALL MOVIES</button>

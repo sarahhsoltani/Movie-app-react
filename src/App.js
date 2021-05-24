@@ -12,6 +12,13 @@ import AddMovies from './components/Admin/addMovies';
 import Notification from './components/Admin/notification';
 function App() {
   const [film, setFilm] = useState([])
+  const [search,setSearch]=useState("")
+
+  const handleChange=(e)=>{
+    setSearch(
+      e.target.value
+    )
+  }
   // const getFilm = ()=>{
     
   //   fetch('films.json').then(
@@ -40,7 +47,7 @@ function App() {
   },[])
   return (
     <BrowserRouter>
-      <Route exact path="/" > <Home film={film} getFilm={getFilm} addFavorite={addFavorite}/></Route>
+      <Route exact path="/" > <Home film={film} getFilm={getFilm} search={search} handleChange={handleChange} addFavorite={addFavorite}/></Route>
       <Route  path="/favorites" > <Favorites favorite={favorite}/> </Route>
       <Route  path="/tips" > <Tips/></Route>
             {film.map((el) => (
@@ -50,7 +57,7 @@ function App() {
             ))}
       <Route  path="/contact" > <Contact/></Route>
       <Route path="/admin" ><Admin /></Route>
-      <Route path='/addMovies'><AddMovies getFilm={getFilm} film={film}/></Route>
+      <Route path='/addMovies'><AddMovies getFilm={getFilm} film={film}  search={search} handleChange={handleChange} /></Route>
       <Route path="/notification"> <Notification/></Route>
     </BrowserRouter>
   );

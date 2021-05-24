@@ -14626,7 +14626,11 @@ h2.title {
   font-size: 0.875rem;
 }
 .logo-dash{
-  width: 10rem;
+  width: 8rem;
+}
+.title-modal{
+  color: #000;
+  font-weight: 400;
 }
 .tooltip.bs-tooltip-top .arrow::before,
 .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before,
@@ -17679,6 +17683,12 @@ label {
 
 .card [class*="card-header-"] .ct-chart .card-title {
   color: #fff;
+}
+.live{
+  font-size: 40px;
+}
+.ct-chart{
+  text-align: center;
 }
 
 .card [class*="card-header-"] .ct-chart .card-category {

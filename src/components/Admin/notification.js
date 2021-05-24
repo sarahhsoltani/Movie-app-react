@@ -13,7 +13,7 @@ const Notification = () => {
   </div>
       <div className="sidebar-wrapper mt-5">
         <ul className="nav">
-          <li className="nav-item active  ">
+          <li className="nav-item   ">
             <Link className="nav-link" to='/admin'>
               <i className="material-icons">dashboard</i>
               <p>Dashboard</p>
@@ -34,7 +34,7 @@ const Notification = () => {
          
          
          
-          <li className="nav-item ">
+          <li className="nav-item active">
             <Link className="nav-link" to="notification">
               <i className="material-icons">notifications</i>
               <p>Notifications</p>
