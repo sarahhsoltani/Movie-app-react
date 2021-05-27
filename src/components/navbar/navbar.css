@@ -16,7 +16,7 @@
     text-decoration: none;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: white;
+    color: #e90101 !important;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -33,7 +33,7 @@
     border-radius: 18px;
 }
 .notifcation{
-    margin-left: 193px;
+    margin-left: 21rem;
 
 }
 .notifcation sup{

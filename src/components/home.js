@@ -38,7 +38,7 @@ const Home = ({addFavorite,film,getFilm,search,handleChange}) => {
         <div className="col-md-6">
           <div className="row">
             <div className="experience col-md-5 mt-5">
-              <h1 className="pt-5 mt-7">YEARS OF EXPERIENCE 
+              <h1 className="pt-5 mt-7 exp">YEARS OF EXPERIENCE 
               <p className="pt-3">Films+Series+ Production vidéos</p>
               </h1>
             </div>

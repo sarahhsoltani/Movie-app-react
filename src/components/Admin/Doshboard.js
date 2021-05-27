@@ -20,10 +20,10 @@ const Doshboard = () => {
             </Link>
           </li>
           <li className="nav-item ">
-            <a className="nav-link" href="./user.html">
+            <Link className="nav-link" to="/users">
               <i className="material-icons">person</i>
               <p>User Profile</p>
-            </a>
+            </Link>
           </li>
           <li className="nav-item ">
             <Link className="nav-link" to="/addMovies">
@@ -59,8 +59,8 @@ const Doshboard = () => {
           </button>
           <div className="collapse navbar-collapse justify-content-end">
             <form className="navbar-form">
-              <div className="input-group no-border">
-                <input type="text" value="" class="form-control" placeholder="Search..."/>
+              <div className="input-group no-border ">
+                <input type="text" value="" className="form-control search-admin" placeholder="Search..."/>
                 <button type="submit" className="btn btn-default btn-round btn-just-icon">
                   <i className="material-icons">search</i>
                   <div className="ripple-container"></div>

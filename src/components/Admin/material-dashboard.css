@@ -473,7 +473,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3977,20 +3977,8 @@ tbody.collapse.show {
   margin-left: -1px;
 }
 
-.input-group-text {
-  display: flex;
-  align-items: center;
-  padding: 0.4375rem 0;
-  margin-bottom: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  text-align: center;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0;
+.search-admin{
+  border: none !important;
 }
 
 .input-group-text input[type="radio"],
@@ -4703,9 +4691,7 @@ tbody.collapse.show {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
-}
+
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
@@ -4751,7 +4737,7 @@ tbody.collapse.show {
 
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
-  color: #ffffff;
+  color: #e90101
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -11861,46 +11847,7 @@ form {
   margin-bottom: 0;
 }
 
-.form-control {
-  background: no-repeat center bottom, center calc(100% - 1px);
-  background-size: 0 100%, 100% 100%;
-  border: 0;
-  height: 36px;
-  transition: background 0s ease-out;
-  padding-left: 0;
-  padding-right: 0;
-  border-radius: 0;
-  font-size: 14px;
-}
 
-.form-control:focus,
-.bmd-form-group.is-focused .form-control {
-  background-size: 100% 100%, 100% 100%;
-  transition-duration: 0.3s;
-  box-shadow: none;
-}
-
-.form-control::-moz-placeholder {
-  color: #AAAAAA;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.form-control:-ms-input-placeholder {
-  color: #AAAAAA;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.form-control::-webkit-input-placeholder {
-  color: #AAAAAA;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.has-white .form-control::-moz-placeholder {
-  color: #fff;
-}
 
 .has-white .form-control:-ms-input-placeholder {
   color: #fff;
@@ -12041,10 +11988,6 @@ fieldset[disabled] .is-focused .switch label:focus {
   color: #999999;
 }
 
-.form-control,
-.is-focused .form-control {
-  background-image: linear-gradient(to top, #9c27b0 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
-}
 
 .form-control:invalid {
   background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
@@ -13688,14 +13631,7 @@ fieldset[disabled] .form-group .form-control {
   background-repeat: no-repeat;
 }
 
-.input-group .input-group-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px 0 15px;
-  background-color: transparent;
-  border-color: transparent;
-}
+
 
 .img-thumbnail {
   border-radius: 16px;
@@ -13716,7 +13652,7 @@ fieldset[disabled] .form-group .form-control {
   margin-bottom: 20px;
   height: auto !important;
   color: #555;
-  background-color: #fff !important;
+  
   box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
 }
 
@@ -14359,7 +14295,7 @@ h6,
 .h2,
 .h3,
 .h4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
   font-weight: 300;
   line-height: 1.5em;
 }

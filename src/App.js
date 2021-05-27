@@ -10,10 +10,12 @@ import Admin from './components/Admin/admin';
 import axios from 'axios';
 import AddMovies from './components/Admin/addMovies';
 import Notification from './components/Admin/notification';
+import Users from './components/Admin/Users';
+
 function App() {
   const [film, setFilm] = useState([])
   const [search,setSearch]=useState("")
-
+  const [isLoading,setIsloading]=useState(true)
   const handleChange=(e)=>{
     setSearch(
       e.target.value
@@ -35,18 +37,36 @@ function App() {
   } 
    //Get movies
    const getFilm=()=> {
-    axios.get("http://localhost:3007/posts").then((response) => {
-    
-      setFilm(response.data);
-      console.log(`ziedaa`, film)
+    axios.get("https://movie-app-react-76494-default-rtdb.firebaseio.com/posts.json").then((response) => {
+      // console.log(`ziedaa`, Object.entries(response.data).map(el=>el))
+      // setFilm(Object.entries(response.data).map(el=>el[1]));
+      setFilm(Object.values(response.data))
+      console.log('get my films',film)
+      
     });
   } 
   useEffect(()=> {getFilm()
-    console.log(`ziedaa`, film)
+    console.log('hahahahaha',film)
 
   },[])
+  useEffect(() =>{
+    setTimeout(() => {
+      setIsloading( false );
+    }, 3000);
+  })
+ 
   return (
-    <BrowserRouter>
+   
+     
+ <div>
+      {
+       isLoading ? (
+         <div className='text-center'> 
+           <h1>Welcome to filmy</h1>
+        <img src="./image/Spinner-1s-200px.svg" alt='...'/>
+         </div>
+        ) : (
+        <BrowserRouter>
       <Route exact path="/" > <Home film={film} getFilm={getFilm} search={search} handleChange={handleChange} addFavorite={addFavorite}/></Route>
       <Route  path="/favorites" > <Favorites favorite={favorite}/> </Route>
       <Route  path="/tips" > <Tips/></Route>
@@ -59,7 +79,9 @@ function App() {
       <Route path="/admin" ><Admin /></Route>
       <Route path='/addMovies'><AddMovies getFilm={getFilm} film={film}  search={search} handleChange={handleChange} /></Route>
       <Route path="/notification"> <Notification/></Route>
-    </BrowserRouter>
+      <Route path="/users"> <Users/></Route>
+    </BrowserRouter>)}
+ </div>
   );
 }
 

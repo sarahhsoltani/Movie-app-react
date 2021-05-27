@@ -45,7 +45,7 @@ function Movies ({film,search,addFavorite}) {
             <img src={el.image} className="card-img-top w-100 h-100" alt="..."/>
              </Link>
          <div className="card-body ">
-         <p className="card-text title-film">{el.title} </p>
+         <p className="card-text title-film">{el.title}</p>
          <div className="d-flex justify-content-around">
          <p className="card-text text-center ">{el.year}</p>
          <p className="type-film">{el.type}</p>

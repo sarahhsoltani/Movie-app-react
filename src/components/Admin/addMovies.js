@@ -13,7 +13,7 @@ const AddMovies = ({film,title,search,handleChange}) => {
   //   const [showw, setShoww] = useState(false);
   // const handleCloose = () => setShoww(false);
   // const handleShoww = () => setShoww(true);
-  const [input,setInput]=useState( { title:"",desc:"",year:"",rating:'',image:'',type:''});
+  const [input,setInput]=useState( { title:"",desc:"",year:"",rating:"",image:"",type:""});
   // const [update,setupdate]=useState( { title:el.title,desc:el.desc,year:el.year,rating:el.rating,image:el.image,type:el.type});
 
   //handleChage
@@ -41,7 +41,7 @@ const AddMovies = ({film,title,search,handleChange}) => {
      const handlesubmit = () => {
     
       axios
-        .post("http://localhost:3007/posts",input)
+        .post("https://movie-app-react-76494-default-rtdb.firebaseio.com/posts.json",JSON.stringify(input))
         .then((response) => console.log(response))
         .catch((error) => console.log(error));
        
@@ -60,9 +60,9 @@ const AddMovies = ({film,title,search,handleChange}) => {
 //   },[])
   //delete movies
   const deleteMovie=(id)=> {
-    axios.delete(`http://localhost:3007/posts/${id}`)
+    axios.delete("https://movie-app-react-76494-default-rtdb.firebaseio.com/posts.json",{ params: { id: 1 } } )
     .then(response => {
-        console.log("response: hahaha", response);
+        console.log("deleeeeeeeete", response.data);
       })
     .catch(err=> 
       console.log(err)
@@ -99,10 +99,10 @@ const AddMovies = ({film,title,search,handleChange}) => {
 </Link>
 </li>
 <li className="nav-item ">
-  <a className="nav-link" href="./user.html">
-    <i className="material-icons">person</i>
-    <p>User Profile</p>
-  </a>
+ <Link className="nav-link" to="/users">
+   <i className="material-icons">person</i>
+   <p>User Profile</p>
+</Link>
 </li>
 <li className="nav-item active">
   <a className="nav-link" to="/addMovies">
@@ -139,7 +139,7 @@ const AddMovies = ({film,title,search,handleChange}) => {
 <div className="collapse navbar-collapse justify-content-end">
   <form className="navbar-form">
     <div className="input-group no-border">
-      <input type="text" className="form-control"  onChange={handleChange} placeholder="Search..."/>
+      <input type="text" className="search-admin form-control"  onChange={handleChange} placeholder="Search..."/>
       <button type="submit" className="btn btn-default btn-round btn-just-icon">
         <i className="material-icons">search</i>
         <div className="ripple-container"></div>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import "./admin.css";
 import "./material-dashboard.css"
-const Notification = () => {
+const Users = () => {
   return(
     <div class="dark-edition">
           <div class="wrapper ">
@@ -19,7 +19,7 @@ const Notification = () => {
               <p>Dashboard</p>
             </Link>
           </li>
-          <li className="nav-item ">
+          <li className="nav-item active">
             <Link className="nav-link" to="/users">
               <i className="material-icons">person</i>
               <p>User Profile</p>
@@ -33,8 +33,7 @@ const Notification = () => {
           </li>
          
          
-         
-          <li className="nav-item active">
+          <li className="nav-item ">
             <Link className="nav-link" to="notification">
               <i className="material-icons">notifications</i>
               <p>Notifications</p>
@@ -120,4 +119,4 @@ const Notification = () => {
 
  }
 
-export default Notification
+export default Users

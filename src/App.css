@@ -91,6 +91,10 @@ body{
   letter-spacing: 2px;
   opacity: 0.6;
 }
+.experience .exp{
+  font-size: 42px;
+    font-weight: 400;
+}
 .his{
   width: 100%;
   display: block;
