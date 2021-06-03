@@ -11,7 +11,7 @@ import axios from 'axios';
 import AddMovies from './components/Admin/addMovies';
 import Notification from './components/Admin/notification';
 import Users from './components/Admin/Users';
-
+import Signup from './components/account/signup'
 function App() {
   const [film, setFilm] = useState([])
   const [search,setSearch]=useState("")
@@ -40,11 +40,16 @@ function App() {
     axios.get("https://movie-app-react-76494-default-rtdb.firebaseio.com/posts.json").then((response) => {
       // console.log(`ziedaa`, Object.entries(response.data).map(el=>el))
       // setFilm(Object.entries(response.data).map(el=>el[1]));
-      setFilm(Object.values(response.data))
+      setFilm(response.data)
+      //console.log(`(Object.values(response.data))`, (Object.values(response.data)))
       console.log('get my films',film)
       
+
+      console.log('object',response.data)
     });
+    
   } 
+
   useEffect(()=> {getFilm()
     console.log('hahahahaha',film)
 
@@ -52,35 +57,48 @@ function App() {
   useEffect(() =>{
     setTimeout(() => {
       setIsloading( false );
-    }, 3000);
+    }, 1000);
   })
  
   return (
    
      
  <div>
-      {
+  
+        <BrowserRouter>
+        {/* {
        isLoading ? (
          <div className='text-center'> 
            <h1>Welcome to filmy</h1>
         <img src="./image/Spinner-1s-200px.svg" alt='...'/>
          </div>
-        ) : (
-        <BrowserRouter>
-      <Route exact path="/" > <Home film={film} getFilm={getFilm} search={search} handleChange={handleChange} addFavorite={addFavorite}/></Route>
+        ) : 
+      ( */}
+      <div>
+        <Route exact path="/" > <Home film={film} getFilm={getFilm} search={search} handleChange={handleChange} addFavorite={addFavorite}/></Route>
+     
+
+      
       <Route  path="/favorites" > <Favorites favorite={favorite}/> </Route>
-      <Route  path="/tips" > <Tips/></Route>
-            {film.map((el) => (
-              <Route path={"/details" + el.id}>
-                <Details el={el}/>
+      <Route  path="/tips" > <Tips/>
+     </Route>
+     {Object.keys(film).map((el) => (
+              <Route exact path={"/details" + film[el].id}>
+                <Details film={film} el={el}/>
               </Route>
             ))}
       <Route  path="/contact" > <Contact/></Route>
-      <Route path="/admin" ><Admin /></Route>
-      <Route path='/addMovies'><AddMovies getFilm={getFilm} film={film}  search={search} handleChange={handleChange} /></Route>
-      <Route path="/notification"> <Notification/></Route>
-      <Route path="/users"> <Users/></Route>
-    </BrowserRouter>)}
+   
+     
+      <Route exact path="/admin" ><Admin /></Route>
+    
+      <Route exact path='/addMovies'><AddMovies getFilm={getFilm} film={film}  search={search} handleChange={handleChange} /></Route>
+      <Route exact path="/notification"> <Notification/></Route>
+      <Route exact path="/users"> <Users/></Route>
+      
+      </div>
+     {/* )} */}
+    </BrowserRouter>
  </div>
   );
 }

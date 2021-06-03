@@ -103,15 +103,13 @@ const Notification = () => {
             </ul>
           </div>
         </div>
-      </nav>
-     
-
-      
-     
-    
+      </nav>    
     </div>
-  </div>
 
+  </div>
+<div>
+  
+</div>
 
 
   

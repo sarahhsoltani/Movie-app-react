@@ -2,8 +2,9 @@ import React from 'react'
 import {Form,Button,Modal} from  'react-bootstrap'
 import {useState,useEffect} from 'react';
 import axios from 'axios';
-function Update({el}) {
-     const [update,setupdate]=useState( { title:el.title,desc:el.desc,year:el.year,rating:el.rating,image:el.image,type:el.type});
+function Update({elm,el}) {
+     const [update,setupdate]=useState
+     ( { title:el.title,desc:el.desc,year:el.year,rating:el.rating,image:el.image,type:el.type});
     const [showw, setShoww] = useState(false);
     const handleCloose = () => setShoww(false);
     const handleShoww = () => setShoww(true); 
@@ -20,18 +21,17 @@ function Update({el}) {
       };
       const updateMovies=(id)=> {
        
-        axios.put(`http://localhost:3007/posts/${id}`, update)
+        axios.put(`https://movie-app-react-76494-default-rtdb.firebaseio.com/posts/${id}.json`, update)
         .then(response => {
           setupdate( response.data);})
     }
     console.log(`updaaaaaate`, update)
 
-    useEffect(()=> {updateMovies()
-    },[]   )
+  
 
     return (
         <div>
-               <p> <i className="fas fa-pen-square edit "  onClick={handleShoww}></i></p> 
+               <p onClick={handleShoww}> <i className="fas fa-pen-square edit "  ></i></p> 
 
 
 <Modal show={showw} onHide={handleCloose}>
@@ -73,7 +73,7 @@ function Update({el}) {
   <Button variant="secondary" onClick={handleCloose}>
 Close
 </Button>
-<Button type='submit' variant="primary"  onClick={()=>updateMovies(el.id)}
+<Button  variant="primary"  onClick={()=>updateMovies(elm)}
 >
 Save Changes
 </Button>

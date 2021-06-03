@@ -2,10 +2,9 @@ import React from 'react'
 import Navbarr from './navbar/navbar'
 import Movies from './movies/movie'
 import Footer from './footer/footer'
-import {useState} from 'react'
-
+import {useState,useEffect} from 'react'
 const Home = ({addFavorite,film,getFilm,search,handleChange}) => {
- 
+
   return(
     <div>
         <Navbarr search={search} handlChange={handleChange}/>
@@ -105,7 +104,7 @@ eius quia molestias nihil temporibus nam praesentium odit repellat.</p>
       <div className="col-md-6 col-12 mt-5  testimential">
         <h2 >Unlimited movies, TV shows, and more.</h2>
         <h5>Watch anywhere. Cancel anytime.</h5>
-        <p className="mb-4">Ready to watch? Enter your email to create or restart your membership.</p>
+        <h5 className="mb-4">Ready to watch? Enter your email to create or restart your membership.</h5>
         <div className="input-group mb-3">
   <input type="text" className="form-control " placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
   <span className="input-group-text addon" id="basic-addon2">GET STARTED <i className="fas fa-paper-plane ml-1"></i></span>

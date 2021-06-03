@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import Rater from 'react-rater'
 import Update from './update';
 
-const AddMovies = ({film,title,search,handleChange}) => {
+const AddMovies = ({film,title,search,handleChange,elm}) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -38,10 +38,10 @@ const AddMovies = ({film,title,search,handleChange}) => {
   //   console.log(`mansourrr`,update )
   // };
      //post data 
-     const handlesubmit = () => {
-    
+     const handlesubmit = (e) => {
+      e.preventDefault();
       axios
-        .post("https://movie-app-react-76494-default-rtdb.firebaseio.com/posts.json",JSON.stringify(input))
+        .post("https://movie-app-react-76494-default-rtdb.firebaseio.com/posts.json",input)
         .then((response) => console.log(response))
         .catch((error) => console.log(error));
        
@@ -59,8 +59,9 @@ const AddMovies = ({film,title,search,handleChange}) => {
 
 //   },[])
   //delete movies
+ 
   const deleteMovie=(id)=> {
-    axios.delete("https://movie-app-react-76494-default-rtdb.firebaseio.com/posts.json",{ params: { id: 1 } } )
+    axios.delete(`https://movie-app-react-76494-default-rtdb.firebaseio.com/posts/${id}.json` )
     .then(response => {
         console.log("deleeeeeeeete", response.data);
       })
@@ -237,32 +238,32 @@ const AddMovies = ({film,title,search,handleChange}) => {
      </div>
      </div>
  <div className='container'>
- <div className="row">
+ <div className="row back">
 
-{  film.filter(el=>
-        el.title.toLowerCase().includes(search.toLowerCase())
-        ).map(el=>
+{ Object.keys(film).map(el=>
    
-        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-3">
+        <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-3 ">
             <div className="card" >
-            <Link to={"/details" + el.id}>
-            <img src={el.image} className="card-img-top w-100 h-100" alt="..."/>
-             </Link>
-         <div className="card-body ">
-         <p className="card-text title-film">{el.title} </p>
+            {/* <Link to={"/details" + elm.id}>
+            <img src={film[elm].image} className="card-img-top w-100 h-100" alt="..."/>
+             </Link> */}
+           <img src={film[el].image} className="card-img-top w-100 h-100" alt="..."/>
+         <div key={el}  className="card-body ">
+         <p className="card-text title-film">{film[el].title} </p>
          <div className="d-flex justify-content-around">
-         <p className="card-text text-center ">{el.year}</p>
-         <p className="type-film">{el.type}</p>
+         <p className="card-text text-center ">{film[el].year}</p>
+         <p className="type-film">{film[el].type}</p>
          <p><i class="fas fa-play-circle"></i></p>
          
          </div>
-         <Rater total={5} rating={el.rating} interactive={false}  />
+         <Rater total={5} rating={film[el].rating} interactive={false}  />
       
       </div>
      <div className="d-flex justify-content-around"> 
-     <p><i className="fas fa-trash remove " onClick={()=>deleteMovie(el.id)}></i></p>
+     <p><i className="fas fa-trash remove " onClick={()=>deleteMovie(el)}></i></p>
        
-       <Update el={el} />
+       
+       <Update el={film[el]} elm={el} />
         {/* <p> <i className="fas fa-pen-square edit "  onClick={handleShoww}></i></p> 
 
 

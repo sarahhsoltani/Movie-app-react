@@ -138,7 +138,7 @@ body{
 }
 .para-service{
   color: gray;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
 }
 .list-movies{
@@ -220,6 +220,13 @@ body{
   position: relative;
   width: 5%;
   
+}
+.new{
+  color: black !important;
+    font-weight: 400 !important;
+}
+.back{
+  background-color: #1f283e;
 }
 .new::before{
   content: "";

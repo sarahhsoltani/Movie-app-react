@@ -25,6 +25,8 @@
 }
 .label{
     font-size: 15px;
+    color: black;
+    font-weight: 500;
 }
 .favorite{
     margin-top: 8rem;
@@ -68,4 +70,14 @@ iframe{
     margin-right: 6px;
     font-size: 16px;
     
+}
+.detail-para{
+    color: black !important;
+    width: 112vh !important;
+    line-height: 27px !important;
+}
+.detail-title{
+    color: black;
+    font-weight: 400;
+
 }

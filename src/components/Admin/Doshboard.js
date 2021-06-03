@@ -9,7 +9,7 @@ const Doshboard = () => {
     <div className="sidebar" data-color="purple" data-background-color="black" >
     
       <div className="logo">
-      <img src="./image/logo.png" alt="..." className="logo-dash mb-5"/>
+     <Link to='/'> <img src="./image/logo.png" alt="..." className="logo-dash mb-5"/></Link>
   </div>
       <div className="sidebar-wrapper mt-5">
         <ul className="nav">

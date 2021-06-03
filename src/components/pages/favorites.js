@@ -8,7 +8,7 @@ const Favorites = ({favorite}) => {
       <Navbarr/>
      <div className="favorite row mx-2" >
      {
-         favorite.map(el=>
+        favorite.map(el=>
     
           <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-3">
               <div className="card" >

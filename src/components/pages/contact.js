@@ -17,7 +17,7 @@ const Contact = () => {
           <Form>
             <h2>SEND A MESSAGE</h2>
            <Form.Group>
-           <Form.Label className='label'>NAME *</Form.Label>
+           <Form.Label className='label '>NAME *</Form.Label>
              <Form.Control size="lg"  type="text"  />
              <Form.Label className='label'>EMAIL *</Form.Label>
               <Form.Control size="lg"  type="text"  />
@@ -26,7 +26,7 @@ const Contact = () => {
              
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>MESSAGE *</Form.Label>
+              <Form.Label className='label'>MESSAGE *</Form.Label>
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
           </Form>
