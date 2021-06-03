@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./admin.css";
 import "./material-dashboard.css"
 
-const Users = () => {
+const Users = ({email} ) => {
   return(
     <div class="dark-edition">
           <div class="wrapper ">
@@ -104,16 +104,13 @@ const Users = () => {
           </div>
         </div>
       </nav>
-     
-
-      
-     
     
     </div>
+ 
   </div>
 
 
-
+ 
   
     </div>
    )

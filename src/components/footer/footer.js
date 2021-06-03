@@ -35,7 +35,8 @@ const Footer = () => {
           <p>A: 14 L.E Goulburn St, Berlin 2000Wm</p>
           <p>P: (+88) 1990 6886</p>
           <p>E: contact@9studio.com</p>
-         <div className="d-flex"> <p className="social"><i class="fas fa-map-marker-alt"></i></p> <a href="ll">Google Map</a></div>
+         <div className="d-flex"> <p className="social"><i class="fas fa-map-marker-alt"></i></p>
+          <a href="ll">Google Map</a></div>
       
         </div>
         <div className="col-md-3">

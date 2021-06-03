@@ -2,12 +2,14 @@ import React from 'react'
 import Navbarr from './navbar/navbar'
 import Movies from './movies/movie'
 import Footer from './footer/footer'
+
 import {useState,useEffect} from 'react'
-const Home = ({addFavorite,film,getFilm,search,handleChange}) => {
+import { Carousel } from 'react-bootstrap'
+const Home = ({addFavorite,film,getFilm,search,handleChange,profiles}) => {
 
   return(
     <div>
-        <Navbarr search={search} handlChange={handleChange}/>
+        <Navbarr search={search} handlChange={handleChange} profiles={profiles}/>
       
      <div className="header">
        <div className="container ">
@@ -190,6 +192,18 @@ eius quia molestias nihil temporibus nam praesentium odit repellat.</p>
       </div>
     </div>
 
+    {/*----------------------------------CAROOO ---------------------- */}
+    <h1 className="text-center my-5">Our partners</h1>
+{/* ---------------- end card films 4 --------------- */}  
+<div className='col-md-12 col-12 container'>
+      <div className='row'>
+        <div className='col-md-2 w-100'> <img src="/image/logo_5.jpg" alt=''/></div>
+        <div className='col-md-3 w-100'> <img src="/image/logo_9.jpg" alt=''/></div>
+        <div className='col-md-3 w-100'> <img src="/image/logo_6.jpg" alt=''/></div>
+        <div className='col-md-2 w-100'> <img src="/image/logo_10.jpg" alt=''/></div>
+        <div className='col-md-2 w-100'> <img src="/image/logo_7.jpg" alt=''/></div>
+      </div>
+    </div>
     </div>
     {/***********-----------Footer------------********** */ }
     <Footer/>

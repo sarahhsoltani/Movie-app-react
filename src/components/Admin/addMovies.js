@@ -27,6 +27,9 @@ const AddMovies = ({film,title,search,handleChange,elm}) => {
     });
    
    };
+   const refresh=()=>{
+     window.location.reload()
+   }
   // const handleChangee = e => {
   //   const { name, value } = e.target;
   //   //e.target.name=e.target.value
@@ -43,6 +46,7 @@ const AddMovies = ({film,title,search,handleChange,elm}) => {
       axios
         .post("https://movie-app-react-76494-default-rtdb.firebaseio.com/posts.json",input)
         .then((response) => console.log(response))
+        .then(res=>refresh())
         .catch((error) => console.log(error));
        
     }
@@ -65,6 +69,7 @@ const AddMovies = ({film,title,search,handleChange,elm}) => {
     .then(response => {
         console.log("deleeeeeeeete", response.data);
       })
+      .then(res=>refresh())
     .catch(err=> 
       console.log(err)
     );
@@ -263,7 +268,7 @@ const AddMovies = ({film,title,search,handleChange,elm}) => {
      <p><i className="fas fa-trash remove " onClick={()=>deleteMovie(el)}></i></p>
        
        
-       <Update el={film[el]} elm={el} />
+       <Update el={film[el]} elm={el}  refresh={refresh}/>
         {/* <p> <i className="fas fa-pen-square edit "  onClick={handleShoww}></i></p> 
 
 

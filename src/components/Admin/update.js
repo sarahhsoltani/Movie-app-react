@@ -2,7 +2,7 @@ import React from 'react'
 import {Form,Button,Modal} from  'react-bootstrap'
 import {useState,useEffect} from 'react';
 import axios from 'axios';
-function Update({elm,el}) {
+function Update({elm,el,refresh}) {
      const [update,setupdate]=useState
      ( { title:el.title,desc:el.desc,year:el.year,rating:el.rating,image:el.image,type:el.type});
     const [showw, setShoww] = useState(false);
@@ -24,6 +24,7 @@ function Update({elm,el}) {
         axios.put(`https://movie-app-react-76494-default-rtdb.firebaseio.com/posts/${id}.json`, update)
         .then(response => {
           setupdate( response.data);})
+          .then(response=>refresh())
     }
     console.log(`updaaaaaate`, update)
 

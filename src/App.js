@@ -16,11 +16,13 @@ function App() {
   const [film, setFilm] = useState([])
   const [search,setSearch]=useState("")
   const [isLoading,setIsloading]=useState(true)
+  const [profiles,setProfiles]=useState([])
   const handleChange=(e)=>{
     setSearch(
       e.target.value
     )
   }
+
   // const getFilm = ()=>{
     
   //   fetch('films.json').then(
@@ -75,7 +77,7 @@ function App() {
         ) : 
       ( */}
       <div>
-        <Route exact path="/" > <Home film={film} getFilm={getFilm} search={search} handleChange={handleChange} addFavorite={addFavorite}/></Route>
+        <Route exact path="/" > <Home profiles={profiles} film={film} getFilm={getFilm} search={search} handleChange={handleChange} addFavorite={addFavorite}/></Route>
      
 
       
@@ -94,7 +96,7 @@ function App() {
     
       <Route exact path='/addMovies'><AddMovies getFilm={getFilm} film={film}  search={search} handleChange={handleChange} /></Route>
       <Route exact path="/notification"> <Notification/></Route>
-      <Route exact path="/users"> <Users/></Route>
+      <Route exact  path="/users"> <Users/></Route>
       
       </div>
      {/* )} */}

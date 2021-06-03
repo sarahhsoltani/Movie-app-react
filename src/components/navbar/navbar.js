@@ -7,10 +7,8 @@ import Signn from '../auth/Signn';
 import "./navbar.css"
 
 
-const Navbarr = ({input,handlChange}) => {
-  const [profiles,setProfiles]=useState([])
-  const [modalShow,setModalShow]=useState(false)
-  const [isHidden,setisHidden]=useState(false)
+const Navbarr = ({profiles,input,handlChange}) => {
+  
   const [isLogged,setIsLogged]=useState(false)
   const [inputSign,useInputSign]=useState({ namme:"",email:"",Password:"",ConfirmPassword:""})
 
@@ -38,6 +36,7 @@ const Navbarr = ({input,handlChange}) => {
         });
         localStorage.setItem("email", inputSign.email);
         localStorage.setItem("password", inputSign.Password);
+       
         setIsLogged( true );
       } else {
         alert("password confirmation dont match");
@@ -49,6 +48,7 @@ const Navbarr = ({input,handlChange}) => {
     alert("name should contain only alphabet");
   }
 };
+
    //Login
   const Log = () => {
     let email = localStorage.getItem("email");

@@ -12,9 +12,22 @@
     font-size: 5rem;
 }
 .para-show{
-
+    color: black;
     line-height: 2rem;
 
+}.cura{
+    font-weight: 400;
+    color: black;
+}
+.online{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.popular{
+    font-size: 43px;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 2px;
 }
 /* -------------Contact -----------------*/
 .items{
