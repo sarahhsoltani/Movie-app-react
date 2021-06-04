@@ -37,6 +37,22 @@ function App() {
     favorite.push(e)
     console.log(`favorite`, favorite)
   } 
+  //---------------------Remove item from favorit-------------------------------------------------//
+
+  const removeFavoriteMovie=(e)=>{
+    let index = favorite.indexOf(e)
+    favorite.splice(index,1)
+    setfavorite(favorite)
+
+    
+  } 
+   //---------------------Remove all items  from favorit-------------------------------------------//
+   const removeFavoriteMovieAll=()=>{
+    let length = favorite.length
+    favorite.splice(0,length)
+    setfavorite(favorite)
+     
+  }
    //Get movies
    const getFilm=()=> {
     axios.get("https://movie-app-react-76494-default-rtdb.firebaseio.com/posts.json").then((response) => {
@@ -68,20 +84,20 @@ function App() {
  <div>
   
         <BrowserRouter>
-        {/* {
+        {
        isLoading ? (
-         <div className='text-center'> 
-           <h1>Welcome to filmy</h1>
+         <div className='text-center mt-5'> 
+           <h1 className="welcome">Wait Reloding <i class="fas fa-heart myheart"></i></h1>
         <img src="./image/Spinner-1s-200px.svg" alt='...'/>
          </div>
         ) : 
-      ( */}
+      (
       <div>
         <Route exact path="/" > <Home profiles={profiles} film={film} getFilm={getFilm} search={search} handleChange={handleChange} addFavorite={addFavorite}/></Route>
      
 
       
-      <Route  path="/favorites" > <Favorites favorite={favorite}/> </Route>
+      <Route  path="/favorites" > <Favorites removeFavoriteMovieAll={removeFavoriteMovieAll} removeFavoriteMovie={removeFavoriteMovie} favorite={favorite}/> </Route>
       <Route  path="/tips" > <Tips/>
      </Route>
      {Object.keys(film).map((el) => (
@@ -99,7 +115,7 @@ function App() {
       <Route exact  path="/users"> <Users/></Route>
       
       </div>
-     {/* )} */}
+    )} 
     </BrowserRouter>
  </div>
   );

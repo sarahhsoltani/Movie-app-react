@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Footer from '../footer/footer'
 import Navbarr from '../navbar/navbar'
 import './pages.css'
 const Details = ({el,film}) => {
@@ -31,7 +32,7 @@ const Details = ({el,film}) => {
 <button className="text-center btnn btn-redd mt-3">Commenter</button>
 </div>
 </div>
-
+<Footer/>
 </div>
    )
 

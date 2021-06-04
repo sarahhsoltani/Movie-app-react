@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../footer/footer'
 import Navbarr from '../navbar/navbar'
 import './pages.css'
 
@@ -29,6 +30,7 @@ const Tips = () => {
      <img  src="/image/cap.png" alt=""/>
      </div>
       </div>
+      <Footer/>
     </div>
    )
 

@@ -71,10 +71,7 @@ const Navbarr = ({profiles,input,handlChange}) => {
   <Navbar.Brand href="#home" ><Link to="/"><img className="logo" src="./image/logo.png" alt="..."/></Link> </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-  <Form inline>
-      <FormControl onChange={handlChange} className="input-search" type="text" placeholder="Type movie or tv show name to find it"  />
-     <button className="btnn search btn-red"> <i className="fas fa-search"></i></button>
-    </Form>
+  
     <Nav>
   
       <Link className="linkk ml-3  mt-3 pr-3 "  to="/favorites">Favorites movies</Link>
@@ -82,7 +79,12 @@ const Navbarr = ({profiles,input,handlChange}) => {
       <Link  className="linkk   mt-3 " to="/contact">Contact</Link>
      
      <Nav.Link  className="linkk notifcation mt-1" href="#link"><i class="far fa-bell"></i><sup>2</sup></Nav.Link>
+     <Form inline>
+      <FormControl onChange={handlChange} className="input-search" type="text" placeholder="Type movie or tv show name to find it"  />
+     <button className="btnn search btn-red"> <i className="fas fa-search"></i></button>
+    </Form>
      <Nav.Link className="linkk  d-flex" href="#link"> 
+     
      {/* <Login/> */}
     {
       isLogged?

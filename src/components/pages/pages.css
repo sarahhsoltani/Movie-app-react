@@ -42,7 +42,7 @@
     font-weight: 500;
 }
 .favorite{
-    margin-top: 8rem;
+    margin-top: 2rem;
 }
 .fa-heartbeat:hover{
     color: red;
@@ -94,3 +94,20 @@ iframe{
     font-weight: 400;
 
 }
+.favo{
+    background-image: url('../../images/hero-news.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 59vh;
+}
+.favo-title{
+    padding-top: 113px;
+    color: white;
+    font-weight: 600;
+  }
+  .favo-heart{
+      color: red;
+  }
+  .page-link{
+      color: red;
+  }

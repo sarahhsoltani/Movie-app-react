@@ -5065,7 +5065,7 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: 0;
   line-height: 1.25;
-  color: #2196f3;
+  color:black;
   background-color: transparent;
   border: 0 solid #dee2e6;
 }
@@ -5101,8 +5101,8 @@ tbody.collapse.show {
 .page-item.active .page-link {
   z-index: 1;
   color: #ffffff;
-  background-color: #2196f3;
-  border-color: #2196f3;
+  background-color: red;
+  border-color: red;
 }
 
 .page-item.disabled .page-link {
@@ -14309,6 +14309,7 @@ h1,
 h2,
 .h2 {
   font-size: 2.25rem;
+  color: black;
 }
 
 h3,

@@ -64,10 +64,11 @@ body{
 .nine{
   font-size: 279px;
   color: red;
+  font-weight: 400;
 }
 .experience p{
-  font-size: 17px;
-  color: gray;
+  font-size: 19px;
+    color: #736d6d;
 }
 .history h2{
   font-size: 34px;
@@ -79,9 +80,9 @@ body{
   text-transform: none;
 }
 .history p{
-  color: gray;
-  font-size: 14px;
-  line-height: 30px;
+  color: #736d6d;
+  font-size: 17px;
+  line-height: 36px;
 }
 .about{
   width: 100%;
@@ -137,7 +138,7 @@ body{
   text-transform: none;
 }
 .para-service{
-  color: gray;
+  color: #736d6d;
     font-size: 16px;
     line-height: 30px;
 }
@@ -278,4 +279,7 @@ body{
     transform: scale(1.65);
     opacity: 0.3;
   }
+}
+.myheart{
+  color: red;
 }
